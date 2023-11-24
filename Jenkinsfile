@@ -43,7 +43,7 @@ pipeline {
           stage('Create XCFramework') {
             steps {
                  sh 'xcodebuild -create-xcframework \
-                -framework "archives/JenkinsSDK.xcarchive/Products/Library/Frameworks/JenkinsSDK.framework" \
+                -framework "archives/JenkinsSDK-iOS.xcarchive/Products/Library/Frameworks/JenkinsSDK.framework" \
                 -framework "archives/JenkinsSDK-iOS-simulator.xcarchive/Products/Library/Frameworks/JenkinsSDK.framework" \
                 -output "JenkinsSDK.xcframework"'
             }
